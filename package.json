@@ -1,6 +1,6 @@
 {
   "name": "@ishiduca/snoopy-bind-rpc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "browser": "browser.js",
@@ -8,7 +8,8 @@
     "test:server": "NODE_PATH=. tape t/server/test.js",
     "test:node": "NODE_PATH=. tape t/*.js",
     "test:browser": "NODE_PATH=. browserify t/*.js | tape-run",
-    "test": "npm-run-all -s test:node test:server test:browser"
+    "test": "npm-run-all -s test:node test:server test:browser",
+    "build": "browserify ./example/src.js -o ./example/static/bundle.js"
   },
   "browserify": {
     "transform": [
@@ -37,10 +38,13 @@
     "xtend": "^4.0.2"
   },
   "devDependencies": {
+    "@ishiduca/snoopy": "0.0.2",
     "browserify": "^16.5.1",
+    "ecstatic": "^4.1.4",
     "es2040": "^1.2.6",
     "npm-run-all": "^4.1.5",
     "tape": "^5.0.0",
-    "tape-run": "^7.0.0"
+    "tape-run": "^7.0.0",
+    "yo-yo": "^1.4.1"
   }
 }

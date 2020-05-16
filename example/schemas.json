@@ -1,0 +1,14 @@
+{
+  "sum": {
+    "type": "array",
+    "items": {
+      "type": "number"
+    }
+  },
+  "average": {
+    "type": "array",
+    "items": {
+      "type": "number"
+    }
+  }
+}
