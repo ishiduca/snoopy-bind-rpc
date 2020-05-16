@@ -1,0 +1,17 @@
+{
+  "sum": {
+    "type": "array",
+    "items": {
+      "type": "number"
+    }
+  },
+  "upper": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "text": {
+        "type": "string"
+      }
+    }
+  }
+}

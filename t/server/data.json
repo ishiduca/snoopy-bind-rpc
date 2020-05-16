@@ -1,0 +1,34 @@
+[
+  {
+    "method": "sum",
+    "params": [ 1, 2, 3 ],
+    "result": 6
+  },
+  {
+    "method": "upper",
+    "params": [ "the bird", "and", "the bee  " ],
+    "result": "The Bird And The Bee"
+  },
+  {
+    "method": "upper",
+    "params": [ "  " ],
+    "result": {
+      "message": "Internal error",
+      "code": -32603,
+      "data": {
+        "_": {
+          "jsonrpc": "2.0",
+          "id": null,
+          "method": "upper",
+          "params": [ "  " ]
+        },
+        "errors": [
+          {
+            "name": "Error",
+            "message": "not found valid data"
+          }
+        ]
+      }
+    }
+  }
+]

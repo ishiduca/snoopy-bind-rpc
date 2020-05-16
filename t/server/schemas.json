@@ -1,0 +1,14 @@
+{
+  "upper": {
+    "type": "array",
+    "items": {
+      "type": "string"
+    }
+  },
+  "sum": {
+    "type": "array",
+    "items": {
+      "type": "number"
+    }
+  }
+}
