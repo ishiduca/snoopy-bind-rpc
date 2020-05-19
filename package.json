@@ -1,6 +1,6 @@
 {
   "name": "@ishiduca/snoopy-bind-rpc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "browser": "browser.js",
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/ishiduca/snoopy-bind-rpc.git"
   },
-  "keywords": [],
+  "keywords": [ "jsonrpc2", "json-rpc2", "rpc" ],
   "author": "ishiduca@gmail.com",
   "license": "Apache-2.0",
   "bugs": {

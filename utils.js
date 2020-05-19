@@ -16,11 +16,9 @@ function cid () {
 }
 
 function jsonrpc2 (...args) {
-  var _jsonrpc = {
-    jsonrpc: '2.0',
-    id: null
-  }
-  return xtend(_jsonrpc, ...args)
+  var jsonrpc = '2.0'
+  var id = null
+  return xtend({ jsonrpc, id }, ...args)
 }
 jsonrpc2.request = (method, params, ...args) => (
   jsonrpc2({ method, params, id: cid() }, ...args)
